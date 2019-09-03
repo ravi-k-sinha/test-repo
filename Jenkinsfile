@@ -5,7 +5,7 @@ pipeline {
 
         stage('Deploy - Staging') {
             steps {
-                sh './health-check.sh'
+                sh './flakey-deploy.sh'
             }
         }
 
